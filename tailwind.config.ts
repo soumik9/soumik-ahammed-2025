@@ -1,16 +1,26 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    container: {
+      padding: "2rem",
+      screens: {
+        xl: "1280px",
+        "2xl": "1440px",
+      },
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        text: {
+          50: "#FBFDFE",
+          100: "#E7E7E7",
+          200: "#D1D1D1",
+          300: "#CFCFCF",
+          600: "#858585",
+          700: "#4F4F4F",
+          900: "#222222",
+        },
       },
     },
   },
