@@ -5,3 +5,34 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1280px] self-center px-4 sm:px-[20px] md:px-[40px] xl:px-0;
+  }
+
+  .containerLg {
+    @apply max-w-full 2xl:max-w-[1390px] self-center mx-[10px] lg:mx-4 2xl:mx-auto px-4 sm:px-[20px] md:px-[40px] xl:px-0;
+  }
+
+
+  .absolute_center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .fixed_center {
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .flex_center {
+    @apply flex items-center justify-center;
+  }
+
+  .transition_common {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .ellipsis {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+}
